@@ -7,7 +7,7 @@ Used to create Docker images for running composer [https://getcomposer.org]
 Usage
 --------------------
 
-1. Install the `denisura/composer` container (optional - this step is performed by Docker automatically when running the container):
+1. Install the `initlab/composer` container (optional - this step is performed by Docker automatically when running the container):
 
     ``` sh
     $ docker pull denisura/composer
@@ -16,7 +16,7 @@ Usage
 2. Define an bash alias that runs this container whenever `composer` is invoked on the command line:
 
 	``` sh
-	$ echo "alias composer='docker run --rm -it -v \$(pwd):/workspace denisura/composer'" >> ~/.bashrc
+	$ echo "alias composer='docker run --rm -it -v \$(pwd):/workspace initlab/composer'" >> ~/.bashrc
 	$ source ~/.bashrc
 	```
 

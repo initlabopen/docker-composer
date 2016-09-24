@@ -1,5 +1,5 @@
-FROM php:5.6.2-cli
-MAINTAINER Denis Uraganov <github@uraganov.net>
+FROM php:5.6-cli
+MAINTAINER Roman Agabekov <r.agabekov@gmail.com>
 
 RUN apt-get update && apt-get install -y git
 RUN echo "date.timezone = UTC" >> /usr/local/etc/php/php.ini
