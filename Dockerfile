@@ -10,5 +10,3 @@ RUN mv composer.phar /usr/local/bin/composer
 
 RUN mkdir -p /workspace
 WORKDIR /workspace
-
-ENTRYPOINT ["composer"]
